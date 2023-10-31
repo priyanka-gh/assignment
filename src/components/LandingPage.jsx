@@ -28,7 +28,7 @@ const LandingPage = () => {
   const handleEmailChange = (e) => {
     const email = e.target.value.trim();
     setEnteredEmail(email);
-    setIsEmailValid(true); // Reset email validation
+    setIsEmailValid(true); 
 
     if (email === '') {
       setMessage('');
