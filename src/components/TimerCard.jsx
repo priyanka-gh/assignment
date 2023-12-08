@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TimerCard.scss';
 
 function TimerCard({ mode, onTimerExpired }) {
-  const initialRemainingTime = parseInt(localStorage.getItem('remainingTime')) || 300;
+  const initialRemainingTime = parseInt(localStorage.getItem('remainingTime')) || 10;
   // localStorage.removeItem('remainingTime') 
   const [remainingTime, setRemainingTime] = useState(initialRemainingTime);
   const [timerExpired, setTimerExpired] = useState(false);
